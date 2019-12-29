@@ -37,6 +37,7 @@ Now, We can jump a little bit in more details:
 css_locator = 'div#uid > a::attr(href)'
 
 **Text extraction(::text)**
+
 Example:
 
 Hello world!
