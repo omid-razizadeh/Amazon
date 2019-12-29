@@ -48,9 +48,31 @@ Now for Scraping we need to know one more thing response:
 
 product_name = response.css('h3.s-item__title::text').extract()
 
+**In my project, I wanted to extract information of product name and product price. I extracted the information by something like this: **
+
+```python
+product_name = response.css('span.a-size-base-plus.a-color-base.a-text-normal::text').extract()
+        product_price1 = response.css('span.a-price > span.a-offscreen').css('::text').extract()
+```
+
+Then after scraping, I needed to post-process my data as It had some syntax. To remove it I used regular expressions:
+
+```python
+product_price = list(filter(('price').__ne__, product_price1))
+```
+
 **Structure of scrapy:**
 
 We need to first name the class and then define parse function and finally by using response extract the desired information.
+
+```python
+class AmazonSpiderSpider(scrapy.Spider):
+    name = 'amazon'
+    page_number = 3
+    start_urls = [
+        'https://www.amazon.com/s?rh=n%3A16310101%2Cn%3A%2116310211%2Cn%3A16310231%2Cn%3A16521305011%2Cn%3A16318401%2Cn%3A16318511&page=2&qid=1576118084&ref=lp_16318511_pg_2'
+    ]
+```
 
 **Note1.:For some websites like amazon they block to scrape. To overcome this difficulty there are some ways. I used proxy in my project.**
 
