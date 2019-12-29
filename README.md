@@ -15,9 +15,13 @@ examples:
 @id
 
 @href
+
 Some examples:
+
 Xpath and CSS equivalency:
+
 xpath = '/html/body//div/p[2]'
+
 css = 'html > body div > p:nth-of-type(2)'
 
 
