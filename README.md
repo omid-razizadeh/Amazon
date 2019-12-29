@@ -54,6 +54,17 @@ We need to first name the class and then define parse function and finally by us
 
 **Note1.:For some websites like amazon they block to scrape. To overcome this difficulty there are some ways. I used proxy in my project.**
 
+another common way is user-agent. I used scrapy-proxy-pool tool and I just paste this syntax in settings of my scrapy:
+
+```
+DOWNLOADER_MIDDLEWARES = {
+    # ...
+    'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
+    'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
+    # ...
+}
+```
+
 More information about how to set up proxy in your scrapy projects can be found on some github pages like:
 
 https://github.com/hyan15/scrapy-proxy-pool
