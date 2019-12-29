@@ -45,7 +45,7 @@ https://github.com/hyan15/scrapy-proxy-pool
 
 **Pagination:**
 Another problem in web scraping is that our scrapy be able to go to next pages and scrape next page information as well. 
-We can do this by defining by something like this:
+We can do this by defining something like this:
 ```python
 next_page = 'https://www.amazon.com/s?i=grocery&rh=n%3A16310101%2Cn%3A16310211%2Cn%3A16310231%2Cn%3A16521305011%2Cn%3A16318401%2Cn%3A16318511&page=' + str(AmazonSpiderSpider.page_number) + '&qid=1576114939&ref=sr_pg_2'
         if AmazonSpiderSpider.page_number <= 8:
