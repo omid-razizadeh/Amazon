@@ -8,6 +8,7 @@ We choose the third one and we want to extract some information from amazon and 
 For this we need to know a little bit of css or xpath and the structure of scrapy library in python.
 
 **In xpath:**
+
 @ represents "attribute"
 examples:
 @class
