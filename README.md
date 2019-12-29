@@ -33,6 +33,7 @@ Now for Scraping we need to know one more thing response:
 product_name = response.css('h3.s-item__title::text').extract()
 Structure of scrapy:
 We need to first name the class and then define parse function and finally by using response extract the desired information.
+
 **Note1.:For some websites like amazon they block to scrape. To overcome this difficulty there are some ways. I used proxy in my project.**
 More information about how to set up proxy in your scrapy projects can be found on some github pages like:
 https://github.com/hyan15/scrapy-proxy-pool
