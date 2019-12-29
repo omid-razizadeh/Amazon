@@ -3,13 +3,13 @@ DP
 
 There are different ways to extract information from webpages:
 
-    Computer vision
+1.Computer vision
 
-    Using regular expressions
+2.Using regular expressions
 
-    Web scraping like beautifulsoup or crawlers in python
+3.Web scraping like beautifulsoup or crawlers in python
 
-    We choose the third one and we want to extract some information from amazon and ebay website.
+We choose the third one and we want to extract some information from amazon and ebay website.
 
     For this we need to know a little bit of css or xpath and the structure of scrapy library in python.
 
