@@ -51,7 +51,7 @@ product_name = response.css('h3.s-item__title::text').extract()
 **In my project, I wanted to extract information of product name and product price. I extracted the information by something like this: **
 
 ```python
-product_name = response.css('span.a-size-base-plus.a-color-base.a-text-normal::text').extract()
+        product_name = response.css('span.a-size-base-plus.a-color-base.a-text-normal::text').extract()
         product_price1 = response.css('span.a-price > span.a-offscreen').css('::text').extract()
 ```
 
