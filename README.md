@@ -55,7 +55,7 @@ Structure of scrapy:
 
 We need to first name the class and then define parse function and finally by using response extract the desired information.
 
-Note:For some websites like amazon they block to scrape. To overcome this difficulty there are some ways. I used proxy in my project.
+Note1.:For some websites like amazon they block to scrape. To overcome this difficulty there are some ways. I used proxy in my project.
 
 More information about how to set up proxy in your scrapy projects can be found on some github pages like:
 
