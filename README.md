@@ -38,11 +38,17 @@ css_locator = 'div#uid > a::attr(href)'
 
 **Text extraction(::text)**
 Example:
+
 Hello world!
+
 sel.css('p#p-example::text').extract()
+
 Now for Scraping we need to know one more thing response:
+
 product_name = response.css('h3.s-item__title::text').extract()
-Structure of scrapy:
+
+**Structure of scrapy:**
+
 We need to first name the class and then define parse function and finally by using response extract the desired information.
 
 **Note1.:For some websites like amazon they block to scrape. To overcome this difficulty there are some ways. I used proxy in my project.**
